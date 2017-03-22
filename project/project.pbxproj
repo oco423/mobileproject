@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E95FB8A21E82F3680048EC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8A11E82F3680048EC57 /* main.m */; };
+		E95FB8A51E82F3680048EC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8A41E82F3680048EC57 /* AppDelegate.m */; };
+		E95FB8A81E82F3680048EC57 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8A71E82F3680048EC57 /* FirstViewController.m */; };
+		E95FB8AB1E82F3680048EC57 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8AA1E82F3680048EC57 /* SecondViewController.m */; };
+		E95FB8AE1E82F3680048EC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95FB8AC1E82F3680048EC57 /* Main.storyboard */; };
+		E95FB8B01E82F3680048EC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95FB8AF1E82F3680048EC57 /* Assets.xcassets */; };
+		E95FB8B31E82F3680048EC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95FB8B11E82F3680048EC57 /* LaunchScreen.storyboard */; };
+		E95FB8BE1E82F3680048EC57 /* Commute_BuddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8BD1E82F3680048EC57 /* Commute_BuddyTests.m */; };
+		E95FB8C91E82F3680048EC57 /* Commute_BuddyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8C81E82F3680048EC57 /* Commute_BuddyUITests.m */; };
+		E95FB8D81E82F3E30048EC57 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95FB8D71E82F3E30048EC57 /* MapKit.framework */; };
+		E95FB8DB1E82F4E50048EC57 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95FB8DA1E82F4E50048EC57 /* ThirdViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E95FB8BA1E82F3680048EC57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E95FB8951E82F3680048EC57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95FB89C1E82F3680048EC57;
+			remoteInfo = "Commute Buddy";
+		};
+		E95FB8C51E82F3680048EC57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E95FB8951E82F3680048EC57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95FB89C1E82F3680048EC57;
+			remoteInfo = "Commute Buddy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E95FB89D1E82F3680048EC57 /* Commute Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commute Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95FB8A11E82F3680048EC57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E95FB8A31E82F3680048EC57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E95FB8A41E82F3680048EC57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E95FB8A61E82F3680048EC57 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		E95FB8A71E82F3680048EC57 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		E95FB8A91E82F3680048EC57 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E95FB8AA1E82F3680048EC57 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E95FB8AD1E82F3680048EC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E95FB8AF1E82F3680048EC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E95FB8B21E82F3680048EC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E95FB8B41E82F3680048EC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95FB8B91E82F3680048EC57 /* Commute BuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commute BuddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95FB8BD1E82F3680048EC57 /* Commute_BuddyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Commute_BuddyTests.m; sourceTree = "<group>"; };
+		E95FB8BF1E82F3680048EC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95FB8C41E82F3680048EC57 /* Commute BuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Commute BuddyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95FB8C81E82F3680048EC57 /* Commute_BuddyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Commute_BuddyUITests.m; sourceTree = "<group>"; };
+		E95FB8CA1E82F3680048EC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95FB8D71E82F3E30048EC57 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E95FB8D91E82F4E50048EC57 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		E95FB8DA1E82F4E50048EC57 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E95FB89A1E82F3680048EC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95FB8D81E82F3E30048EC57 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95FB8B61E82F3680048EC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95FB8C11E82F3680048EC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E95FB8941E82F3680048EC57 = {
+			isa = PBXGroup;
+			children = (
+				E95FB89F1E82F3680048EC57 /* Commute Buddy */,
+				E95FB8BC1E82F3680048EC57 /* Commute BuddyTests */,
+				E95FB8C71E82F3680048EC57 /* Commute BuddyUITests */,
+				E95FB89E1E82F3680048EC57 /* Products */,
+				E95FB8D61E82F3E30048EC57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E95FB89E1E82F3680048EC57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E95FB89D1E82F3680048EC57 /* Commute Buddy.app */,
+				E95FB8B91E82F3680048EC57 /* Commute BuddyTests.xctest */,
+				E95FB8C41E82F3680048EC57 /* Commute BuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E95FB89F1E82F3680048EC57 /* Commute Buddy */ = {
+			isa = PBXGroup;
+			children = (
+				E95FB8A31E82F3680048EC57 /* AppDelegate.h */,
+				E95FB8A41E82F3680048EC57 /* AppDelegate.m */,
+				E95FB8A61E82F3680048EC57 /* FirstViewController.h */,
+				E95FB8A71E82F3680048EC57 /* FirstViewController.m */,
+				E95FB8A91E82F3680048EC57 /* SecondViewController.h */,
+				E95FB8AA1E82F3680048EC57 /* SecondViewController.m */,
+				E95FB8D91E82F4E50048EC57 /* ThirdViewController.h */,
+				E95FB8DA1E82F4E50048EC57 /* ThirdViewController.m */,
+				E95FB8AC1E82F3680048EC57 /* Main.storyboard */,
+				E95FB8AF1E82F3680048EC57 /* Assets.xcassets */,
+				E95FB8B11E82F3680048EC57 /* LaunchScreen.storyboard */,
+				E95FB8B41E82F3680048EC57 /* Info.plist */,
+				E95FB8A01E82F3680048EC57 /* Supporting Files */,
+			);
+			path = "Commute Buddy";
+			sourceTree = "<group>";
+		};
+		E95FB8A01E82F3680048EC57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E95FB8A11E82F3680048EC57 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E95FB8BC1E82F3680048EC57 /* Commute BuddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E95FB8BD1E82F3680048EC57 /* Commute_BuddyTests.m */,
+				E95FB8BF1E82F3680048EC57 /* Info.plist */,
+			);
+			path = "Commute BuddyTests";
+			sourceTree = "<group>";
+		};
+		E95FB8C71E82F3680048EC57 /* Commute BuddyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E95FB8C81E82F3680048EC57 /* Commute_BuddyUITests.m */,
+				E95FB8CA1E82F3680048EC57 /* Info.plist */,
+			);
+			path = "Commute BuddyUITests";
+			sourceTree = "<group>";
+		};
+		E95FB8D61E82F3E30048EC57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E95FB8D71E82F3E30048EC57 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E95FB89C1E82F3680048EC57 /* Commute Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95FB8CD1E82F3680048EC57 /* Build configuration list for PBXNativeTarget "Commute Buddy" */;
+			buildPhases = (
+				E95FB8991E82F3680048EC57 /* Sources */,
+				E95FB89A1E82F3680048EC57 /* Frameworks */,
+				E95FB89B1E82F3680048EC57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Commute Buddy";
+			productName = "Commute Buddy";
+			productReference = E95FB89D1E82F3680048EC57 /* Commute Buddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E95FB8B81E82F3680048EC57 /* Commute BuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95FB8D01E82F3680048EC57 /* Build configuration list for PBXNativeTarget "Commute BuddyTests" */;
+			buildPhases = (
+				E95FB8B51E82F3680048EC57 /* Sources */,
+				E95FB8B61E82F3680048EC57 /* Frameworks */,
+				E95FB8B71E82F3680048EC57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E95FB8BB1E82F3680048EC57 /* PBXTargetDependency */,
+			);
+			name = "Commute BuddyTests";
+			productName = "Commute BuddyTests";
+			productReference = E95FB8B91E82F3680048EC57 /* Commute BuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E95FB8C31E82F3680048EC57 /* Commute BuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95FB8D31E82F3680048EC57 /* Build configuration list for PBXNativeTarget "Commute BuddyUITests" */;
+			buildPhases = (
+				E95FB8C01E82F3680048EC57 /* Sources */,
+				E95FB8C11E82F3680048EC57 /* Frameworks */,
+				E95FB8C21E82F3680048EC57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E95FB8C61E82F3680048EC57 /* PBXTargetDependency */,
+			);
+			name = "Commute BuddyUITests";
+			productName = "Commute BuddyUITests";
+			productReference = E95FB8C41E82F3680048EC57 /* Commute BuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E95FB8951E82F3680048EC57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Samuel Ash";
+				TargetAttributes = {
+					E95FB89C1E82F3680048EC57 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D4G8TK4YKW;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E95FB8B81E82F3680048EC57 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D4G8TK4YKW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E95FB89C1E82F3680048EC57;
+					};
+					E95FB8C31E82F3680048EC57 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D4G8TK4YKW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E95FB89C1E82F3680048EC57;
+					};
+				};
+			};
+			buildConfigurationList = E95FB8981E82F3680048EC57 /* Build configuration list for PBXProject "Commute Buddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E95FB8941E82F3680048EC57;
+			productRefGroup = E95FB89E1E82F3680048EC57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E95FB89C1E82F3680048EC57 /* Commute Buddy */,
+				E95FB8B81E82F3680048EC57 /* Commute BuddyTests */,
+				E95FB8C31E82F3680048EC57 /* Commute BuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E95FB89B1E82F3680048EC57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95FB8B31E82F3680048EC57 /* LaunchScreen.storyboard in Resources */,
+				E95FB8B01E82F3680048EC57 /* Assets.xcassets in Resources */,
+				E95FB8AE1E82F3680048EC57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95FB8B71E82F3680048EC57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95FB8C21E82F3680048EC57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E95FB8991E82F3680048EC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95FB8DB1E82F4E50048EC57 /* ThirdViewController.m in Sources */,
+				E95FB8AB1E82F3680048EC57 /* SecondViewController.m in Sources */,
+				E95FB8A51E82F3680048EC57 /* AppDelegate.m in Sources */,
+				E95FB8A81E82F3680048EC57 /* FirstViewController.m in Sources */,
+				E95FB8A21E82F3680048EC57 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95FB8B51E82F3680048EC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95FB8BE1E82F3680048EC57 /* Commute_BuddyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95FB8C01E82F3680048EC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95FB8C91E82F3680048EC57 /* Commute_BuddyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E95FB8BB1E82F3680048EC57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E95FB89C1E82F3680048EC57 /* Commute Buddy */;
+			targetProxy = E95FB8BA1E82F3680048EC57 /* PBXContainerItemProxy */;
+		};
+		E95FB8C61E82F3680048EC57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E95FB89C1E82F3680048EC57 /* Commute Buddy */;
+			targetProxy = E95FB8C51E82F3680048EC57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E95FB8AC1E82F3680048EC57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95FB8AD1E82F3680048EC57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E95FB8B11E82F3680048EC57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95FB8B21E82F3680048EC57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E95FB8CB1E82F3680048EC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E95FB8CC1E82F3680048EC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E95FB8CE1E82F3680048EC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D4G8TK4YKW;
+				INFOPLIST_FILE = "Commute Buddy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelAsh.Commute-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E95FB8CF1E82F3680048EC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D4G8TK4YKW;
+				INFOPLIST_FILE = "Commute Buddy/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelAsh.Commute-Buddy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E95FB8D11E82F3680048EC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D4G8TK4YKW;
+				INFOPLIST_FILE = "Commute BuddyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelAsh.Commute-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commute Buddy.app/Commute Buddy";
+			};
+			name = Debug;
+		};
+		E95FB8D21E82F3680048EC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D4G8TK4YKW;
+				INFOPLIST_FILE = "Commute BuddyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelAsh.Commute-BuddyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commute Buddy.app/Commute Buddy";
+			};
+			name = Release;
+		};
+		E95FB8D41E82F3680048EC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D4G8TK4YKW;
+				INFOPLIST_FILE = "Commute BuddyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelAsh.Commute-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Commute Buddy";
+			};
+			name = Debug;
+		};
+		E95FB8D51E82F3680048EC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D4G8TK4YKW;
+				INFOPLIST_FILE = "Commute BuddyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SamuelAsh.Commute-BuddyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Commute Buddy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E95FB8981E82F3680048EC57 /* Build configuration list for PBXProject "Commute Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95FB8CB1E82F3680048EC57 /* Debug */,
+				E95FB8CC1E82F3680048EC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95FB8CD1E82F3680048EC57 /* Build configuration list for PBXNativeTarget "Commute Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95FB8CE1E82F3680048EC57 /* Debug */,
+				E95FB8CF1E82F3680048EC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E95FB8D01E82F3680048EC57 /* Build configuration list for PBXNativeTarget "Commute BuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95FB8D11E82F3680048EC57 /* Debug */,
+				E95FB8D21E82F3680048EC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E95FB8D31E82F3680048EC57 /* Build configuration list for PBXNativeTarget "Commute BuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95FB8D41E82F3680048EC57 /* Debug */,
+				E95FB8D51E82F3680048EC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E95FB8951E82F3680048EC57 /* Project object */;
+}
