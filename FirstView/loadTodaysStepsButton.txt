@@ -1,0 +1,17 @@
+- (IBAction)loadTodaysStepsButton:(id)sender {
+    
+    NSDate *current = [NSDate date];
+    NSCalendar *gregorian = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorian components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:current];
+    NSDate *start = [gregorian dateFromComponents:components];
+    
+    components.hour = 23;
+    components.minute = 59;
+    components.second = 59;
+    NSDate *end = [gregorian dateFromComponents:components];
+    
+    [self.pedometer queryPedometerDataFromDate:start toDate:end withHandler:^(CMPedometerData * _Nullable data, NSError * _Nullable err) {
+        
+        [self updateData:data];
+    }];
+}
