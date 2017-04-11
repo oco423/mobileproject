@@ -149,7 +149,11 @@ The last function is used to handle the conversion button:
 
 This is used to convert the values from meters per second to kilometers per hour by mutlipling the 
 
-current values 3.6 and displaying the results.
+current values 3.6 and displaying the results. It also sets a boolean value, kmh, to true or false.
+
+When true, the values to be displayed on update are in km/h, and when false, the updates will revert
+
+back to m/s.
 
 There were several challenges associated with the implementation of this tab. The first was a limitation of CMPedometer, in 
 that it is not possible to get live (step by step) updates. We had to settle for updating several times a minute. Another 
