@@ -50,8 +50,8 @@
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:config];
 
-    // create a data task object to perform the data downloading.
-    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *err) {
+    //create a data task object
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *err) {
         
         //check for errors
         if (err != nil) {
@@ -67,6 +67,6 @@
             }];
         }
     }];
-    [dataTask resume];
+    [task resume];
 }
 @end
