@@ -1,9 +1,12 @@
+//  Commute Buddy
+//
+//  COMP 4768 - Winter 2017 - Final Project
+//  Group Members: Jeff Conway, Sam Ash, Osede Onodenalore
 //
 //  AppDelegate.m
 //  ThirdView
 //
-//  Created by Jeffrey Lawrence Conway on 2017-04-04.
-//  Copyright © 2017 Jeffrey Lawrence Conway. All rights reserved.
+//  Copyright © 2017 Jeff Conway, Sam Ash, Osede Onodenalore. All rights reserved.
 //
 
 #import "AppDelegate.h"
