@@ -9,7 +9,6 @@
 #import <CoreMotion/CoreMotion.h>
 #import <CoreLocation/CoreLocation.h>
 
-
 @interface FirstViewController : UIViewController <CLLocationManagerDelegate>{
     NSNumber *maxRecordedSpeed;                     //Variable to track max speed
     int timeTick;                                   //Variable to track seconds for the timer
