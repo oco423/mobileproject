@@ -43,9 +43,9 @@ The first function, as usual, is (void)viewDidLoad. Within this function the bas
 begin and variables are set up. First, the timer variables are set to zero:
 
     	timeTick = 0;
-
     	minutes = 0;
 	self.maxRecordedSpeed = 0;
+	kmh = false;
 
 Next, the CMPedometer and CLLocation manager are allocated and innitialize and told to begin tracking 
 
