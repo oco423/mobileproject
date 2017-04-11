@@ -73,29 +73,29 @@ _Nullable data, NSError *err) {
 
 Finally, the timer is set to start recording:
 
-	  [self startTimer];
+	[self startTimer];
 
 The next function (after the required/default (void)didReceiveMemoryWarning) function) is the function 
 
 that is called when we started the CMPedometer:
 	
-	  (void)updateData:(CMPedometerData *)data
+	(void)updateData:(CMPedometerData *)data
 
 Within this function, checks are made to determine if data user data is available. The data we chose to 
 
 display from the CMPedometer generated data are steps taken, distance traveled, average speed, and steps 
 
-per second (cadence). If these values are available they are displayed in their corresponding UILabels, 
+per second (cadence). If these values are avaiable they are displayed in their corresponding UILabels, 
 
 otherwise, the UILabels are set to "N/A" (not available).
 
 Next is the function that is used (and required) by CLLoationManager to track the user's location:
 
-	  (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+	(void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 
 The first thing this function does is get the most update location for the user's device from the 
 
-locations array that is receives from CoreLocation. It then displays the speed the device is traveling 
+locations array that is recieves from CoreLocation. It then displays the speed the device is traveling 
 
 and displays it in the corresponding UILabel. Finally, it checks if the current speed is greater than 
 
@@ -105,7 +105,7 @@ the max speed in the corresponding UILabel.
 
 In order to properly implement CLLocationManager, the following method must be used to catch any errors:
 
-	  (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+	(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 
 This function simply catches errors and, if an error is found, stops the CLLocationManager from 
 
@@ -115,29 +115,29 @@ Now we implement the functions for the timer. First we define the function that 
 
 viewDidLoad:
 
-	  (void)startTimer
+	(void)startTimer
 
 This function simply declares the timer and calls the handler function:
 
-	  (void) myTicker
+	(void) myTicker
 
 Within this function the timer is calculated and displayed. First, it increments the timeTick variable, 
 
 which is used to keep track of seconds, since we declared out timer with an interval of 1.0. If this 
 
-value is less than 10, it is simply formatted so it does not have a zero in front of it and displayed. 
+value is less than 10, it is simply fomatted so it does not have a zero in front of it and displayed. 
 
 Then there is a check to see if the seconds (timeTick) value has reached 60 (one minute). If it has, the 
 
 seconds are reset to zero and the minutes variable is incremented by one. The minutes value is then 
 
-displayed in the appropriate UILabel.
+displayed in the approriate UILabel.
 
 The final two functions are used to handle the buttons being pressed. First, we have the function for 
 
 the reset button:
 
-	  (IBAction)resetButton:(id)sender 
+	(IBAction)resetButton:(id)sender 
 
 This function simply resets the values being displayed to and reclares the CMPedometer to start tracking 
 
@@ -145,8 +145,15 @@ again in order to clear the total steps taken.
 
 The last function is used to handle the conversion button:
 
-	  (IBAction)convertButton:(id)sender
+	(IBAction)convertButton:(id)sender
 
 This is used to convert the values from meters per second to kilometers per hour by mutlipling the 
 
 current values 3.6 and displaying the results.
+
+There were several challenges associated with the implementation of this tab. The first was a limitation of CMPedometer, in 
+that it is not possible to get live (step by step) updates. We had to settle for updating several times a minute. Another 
+challenge, which we failed to overcome in the time allowed, was to keep CMPedometer recording data while in the background. 
+This was due to the fact that up until very recently, it seems, CoreMotion was entirely unable to do so. After much research, 
+we were unable to find a solution that could be implemented.  While this feature is not included in this version, we are 
+confident that given more time we could accomplish this goal.
