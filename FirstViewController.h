@@ -3,7 +3,7 @@
 //  COMP 4768 - Winter 2017 - Final Project
 //  Group Members: Jeff Conway, Sam Ash, Osede Onodenalore
 //
-//  ViewController.h
+//  FirstViewController.h
 //  FirstViewController
 //
 //  Copyright © 2017 Jeff Conway, Sam Ash, Osede Onodenalore. All rights reserved.
