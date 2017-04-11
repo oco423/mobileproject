@@ -54,9 +54,7 @@ from the previous location:
 
 	[self.crumbPathRenderer setNeedsDisplayInMapRect:updateRect];
 
-This view controller contains a variety of other methods required to draw the user's path on top of the map view. The next
-
-method of interest is a function called by the segmented button to choose the map type:
+The next method of interest is a function called by the segmented button to choose the map type:
 
         case 0:
             self.mapView.mapType = MKMapTypeStandard;
@@ -87,4 +85,8 @@ it became clear that this was going to be a challenge. Initially, we attempted t
 
 <GoogleMaps/GoogleMaps.h>, which included some drawing methods to achieve this goal. However, this proved to be difficult and
 
-buggy, 
+buggy, and we explored alternatives. Around this time we discovered Breadcrumb, which is an Apple Developer app which may be
+
+downloaded and tested for free. We ended up borrowing some methods from Breadcrumb to achieve our drawing goal, as the time
+
+constraint for our project became an issue, and we did not have much choice.
