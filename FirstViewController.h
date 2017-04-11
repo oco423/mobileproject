@@ -13,11 +13,11 @@
 #import <CoreMotion/CoreMotion.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface FirstViewController : UIViewController <CLLocationManagerDelegate>{
-    NSNumber *maxRecordedSpeed;                     //Variable to track max speed
-    int timeTick;                                   //Variable to track seconds for the timer
-    int minutes;                                    //Variable to track minutes for the timer
-    NSTimer *timer;                                 //Timer user to track session time
+@interface FirstViewController : UIViewController <CLLocationManagerDelegate>{  //Include CLLoactionManagerDelegate
+    NSNumber *maxRecordedSpeed;                                                 //Variable to track max speed
+    int timeTick;                                                               //Variable to track seconds for the timer
+    int minutes;                                                                //Variable to track minutes for the timer
+    NSTimer *timer;                                                             //Timer user to track session time
 }
 
 //values of all the numbers displayed on the movement view
