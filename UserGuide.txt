@@ -1,7 +1,43 @@
 How to Interact Commute Buddy
 
-	After launching the app, you will be brought to the first view tab. This tab will display all your movement information since launching the app. The values are displayed in meters per second format by default, but you can click the "km/h" button to convert it to kilometers per hour. Once you have clicked this button once, its label will change to "m/s" and can be clicked again to convert back to meters per second. If you wish to reset the values and start over, you can click the "reset" button. You can click the map icon at the bottom middle of the screen to navigate to the second tab, or the weather icon at the bottom right of the screen to navigate to the third tab.
+	After launching the app, you will be brought to the first view tab. This tab will display 
 
-	The second tab will display your current location on a map as well as the path you have traveled. You can double tap the screen to zoom in slightly on a location. While having two fingers on the screen, bring your fingers closer together to zoom out, move them farther apart to zoom in, or move them up or down (together) to change the angle of the map. Towards the bottom of the screen is a selector (segmented control) that can be used to change how the map is displayed. The first, and default, option is a standard few that shows a basic map with labels for roads and some landmark locations. The second option shows a satellite view of the map. The third option is a hybrid view that shows a satellite view with labels for roads and some landmark locations. You can click the icon of a man waking at the bottom left of the screen to navigate to the first tab, or click the weather icon at the bottom right of the screen to navigate to the third tab.
+all your movement information since launching the app. The values are displayed in meters per 
 
-	The third tab will display weather information about your current location. You can click the icon of a man waking at the bottom left of the screen to navigate to the first tab, or click the map icon at the bottom middle of the screen to navigate to the second tab.
+second format by default, but you can click the "km/h" button to convert it to kilometers per 
+
+hour. Once you have clicked this button once, its label will change to "m/s" and can be clicked 
+
+again to convert back to meters per second. If you wish to reset the values and start over, you 
+
+can click the "reset" button. You can click the map icon at the bottom middle of the screen to 
+
+navigate to the second tab, or the weather icon at the bottom right of the screen to navigate to 
+
+the third tab.
+
+	The second tab will display your current location on a map as well as the path you have 
+
+traveled. You can double tap the screen to zoom in slightly on a location. While having two 
+
+fingers on the screen, bring your fingers closer together to zoom out, move them farther apart to 
+
+zoom in, or move them up or down (together) to change the angle of the map. Towards the bottom of 
+
+the screen is a selector (segmented control) that can be used to change how the map is displayed. 
+
+The first, and default, option is a standard few that shows a basic map with labels for roads and 
+
+some landmark locations. The second option shows a satellite view of the map. The third option is 
+
+a hybrid view that shows a satellite view with labels for roads and some landmark locations. You 
+
+can click the icon of a man waking at the bottom left of the screen to navigate to the first tab, 
+
+or click the weather icon at the bottom right of the screen to navigate to the third tab.
+
+	The third tab will display weather information about your current location. You can click 
+
+the icon of a man waking at the bottom left of the screen to navigate to the first tab, or click 
+
+the map icon at the bottom middle of the screen to navigate to the second tab.
