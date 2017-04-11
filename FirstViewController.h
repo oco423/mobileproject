@@ -1,3 +1,7 @@
+//  Commute Buddy
+//
+//  COMP 4768 - Winter 2017 - Project
+//  Group Members: Jeff Conway, Sam Ash, Osede Onodenalore
 //
 //  ViewController.h
 //  FirstViewController
