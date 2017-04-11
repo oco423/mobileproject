@@ -1,9 +1,12 @@
-//
-//  ThirdViewController.h
 //  Commute Buddy
 //
-//  Created by Samuel Ash on 2017-03-22.
-//  Copyright © 2017 Samuel Ash. All rights reserved.
+//  COMP 4768 - Winter 2017 - Final Project
+//  Group Members: Jeff Conway, Sam Ash, Osede Onodenalore
+//
+//  FirstViewController.h
+//  FirstViewController
+//
+//  Copyright © 2017 Jeff Conway, Sam Ash, Osede Onodenalore. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,8 +14,9 @@
 #import <MapKit/MapKit.h>
 #import "AppDelegate.h"
 
-@interface ThirdViewController : UIViewController <CLLocationManagerDelegate>
+@interface ThirdViewController : UIViewController <CLLocationManagerDelegate> //Include CLLoactionManagerDelegate
 
+//UILabels to display the weather information
 @property (weak, nonatomic) IBOutlet UILabel *cityName;
 @property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *weatherIcon;
@@ -24,6 +28,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *windLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rainLabel;
 @property (weak, nonatomic) IBOutlet UILabel *snowLabel;
-
 
 @end
