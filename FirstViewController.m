@@ -67,26 +67,26 @@
 
     //check if the pedometer can get the step counting data
     if ([CMPedometer isStepCountingAvailable]){
-        self.stepsTaken.text = [stepFormat stringFromNumber:data.numberOfSteps];        //display the data
+        self.stepsTaken.text = [stepFormat stringFromNumber:data.numberOfSteps];                            //display the data
     }
     else{
-        self.stepsTaken.text = @"N/A";                                                  //display "N/A" if unavailable
+        self.stepsTaken.text = @"N/A";                                                                      //display "N/A" if unavailable
     }
 
     //check if the pedometer can get the distance data
     if ([CMPedometer isDistanceAvailable]){ 
-        self.distanceTraveled.text = [distanceFormat stringFromNumber:data.distance];   //display the data
+        self.distanceTraveled.text = [distanceFormat stringFromNumber:data.distance];                       //display the data
     }
     else{
-        self.distanceTraveled.text = @"N/A";                                            //display "N/A" if unavailable
+        self.distanceTraveled.text = @"N/A";                                                                //display "N/A" if unavailable
     }
 
      //check if the pedometer can get the cadence (steps per second) data
     if ([CMPedometer isCadenceAvailable]){
-        self.stepsPerSecond.text = [stepsPerSecondFormat stringFromNumber:data.currentCadence]; //display the data
+        self.stepsPerSecond.text = [stepsPerSecondFormat stringFromNumber:data.currentCadence];             //display the data
     }
     else{
-        self.stepsPerSecond.text = @"N/A";                                                      //display "N/A" if unavailable
+        self.stepsPerSecond.text = @"N/A";                                                                  //display "N/A" if unavailable
     }
 
     //check if the pedometer can get the pace data
@@ -94,21 +94,21 @@
         
         //displa in m/s
         if (kmh == false){
-            float converetedSpeed = 1 / [data.currentPace floatValue];                                  //convert to m/s from s/m (pedometer default)
-            NSString *curSpeed = [[NSNumber numberWithFloat:converetedSpeed] stringValue];              //convert to string
+            float converetedSpeed = 1 / [data.currentPace floatValue];                                      //convert to m/s from s/m (pedometer default)
+            NSString *curSpeed = [[NSNumber numberWithFloat:converetedSpeed] stringValue];                  //convert to string
 
-            self.currentSpeed.text = curSpeed;                                                          //display the string
+            self.currentSpeed.text = curSpeed;                                                               //display the string
 
-            float convertedAverageSpeed = 1 / [data.averageActivePace floatValue];                      //convert to m/s from s/m (pedometer default)
-            NSString *curAverageSpeed = [[NSNumber numberWithFloat:convertedAverageSpeed] stringValue]; //convert to string
+            float convertedAverageSpeed = 1 / [data.averageActivePace floatValue];                           //convert to m/s from s/m (pedometer default)
+            NSString *curAverageSpeed = [[NSNumber numberWithFloat:convertedAverageSpeed] stringValue];      //convert to string
 
-            self.averageSpeed.text = curAverageSpeed;                                                   //display the string
+            self.averageSpeed.text = curAverageSpeed;                                                        //display the string
 
             //check if the current speed is greater than the max speed
             if(converetedSpeed > self.maxRecordedSpeed){
-                self.maxRecordedSpeed = converetedSpeed;                                                //set the new max speed
+                self.maxRecordedSpeed = converetedSpeed;                                                     //set the new max speed
             }
-            self.maxSpeed.text = [[NSNumber numberWithFloat:self.maxRecordedSpeed] stringValue];        //display the max speed
+            self.maxSpeed.text = [[NSNumber numberWithFloat:self.maxRecordedSpeed] stringValue];             //display the max speed
         }
 
         //display in km/h
@@ -116,12 +116,12 @@
             float converetedSpeed = 1 / [data.currentPace floatValue];                                       //convert to m/s from s/m (pedometer default)
             NSString *curSpeed = [[NSNumber numberWithFloat:converetedSpeed*3.6] stringValue];               //convert to km/h from m/s and to a string
 
-            self.currentSpeed.text = curSpeed;                                                               //displayy the string
+            self.currentSpeed.text = curSpeed;                                                               //display the string
 
             float convertedAverageSpeed = 1 / [data.averageActivePace floatValue];                           //convert to m/s from s/m (pedometer default)
             NSString *curAverageSpeed = [[NSNumber numberWithFloat:convertedAverageSpeed*3.6] stringValue];  //convert to km/h from m/s and to a string
 
-            self.averageSpeed.text = curAverageSpeed;                                                        //displayy the string
+            self.averageSpeed.text = curAverageSpeed;                                                        //display the string
 
             //check if the current speed is greater than the max speed
             if(converetedSpeed > self.maxRecordedSpeed){
@@ -133,9 +133,9 @@
 
     //data is unavailable
     else{
-        self.currentSpeed.text = @"N/A";                                                        //set current speed to "N/A"
-        self.averageSpeed.text = @"N/A";                                                        //set average speed to "N/A"
-        self.maxSpeed.text = [[NSNumber numberWithFloat:self.maxRecordedSpeed] stringValue];    //set the max speed
+        self.currentSpeed.text = @"N/A";                                                                    //set current speed to "N/A"
+        self.averageSpeed.text = @"N/A";                                                                    //set average speed to "N/A"
+        self.maxSpeed.text = [[NSNumber numberWithFloat:self.maxRecordedSpeed] stringValue];                //set the max speed
     }
 }
 
