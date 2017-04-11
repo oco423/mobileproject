@@ -1,9 +1,12 @@
-//
-//  SecondViewController.m
 //  Commute Buddy
 //
-//  Created by Samuel Ash on 2017-03-22.
-//  Copyright © 2017 Samuel Ash. All rights reserved.
+//  COMP 4768 - Winter 2017 - Final Project
+//  Group Members: Jeff Conway, Sam Ash, Osede Onodenalore
+//
+//  SecondViewController.h
+//  SecondViewController
+//
+//  Copyright © 2017 Jeff Conway, Sam Ash, Osede Onodenalore. All rights reserved.
 //
 
 #import "SecondViewController.h"
@@ -13,8 +16,8 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface SecondViewController () <MKMapViewDelegate, CLLocationManagerDelegate>{
-    CLLocationManager *locationManager;
-    CLLocation *currentLocation;
+    CLLocationManager *locationManager;                                     //create a locationManager
+    CLLocation *currentLocation;                                            //stores the current location
 }
 
 @end
