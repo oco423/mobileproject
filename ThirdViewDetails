@@ -1,8 +1,10 @@
 Third Tab
 	
-	The third tab is used to display useful weather information about the user's current 
-
-location. The view itself is a simple UIView and uses a basic UIViewController. The background is 
+	To keep get the weather information, we are getting the current latitude and longitude of the location from the 
+instance of the CLLocationManger.  We then use CLGeocoder to reverse-geocode and get the city name based on the 
+coordinates and pass the coordinates as varaibles to a method to get the weather information.
+	
+	The view itself is a simple UIView and uses a basic UIViewController. The background is 
 
 set to a shade of blue similar to a clear sky. A UIImageView is used to display the current weather 
 
