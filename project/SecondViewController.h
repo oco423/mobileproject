@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "CrumbPath.h"
+#import "CrumbPathRenderer.h"
 
-@interface SecondViewController : UIViewController
 
+@interface SecondViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) CLGeocoder *myGeocoder;
+
+@property (nonatomic, strong) CrumbPath *crumbs;
+@property (nonatomic, strong) CrumbPathRenderer *crumbPathRenderer;
+@property (nonatomic, strong) MKPolygonRenderer *drawingAreaRenderer;   // shown if kDebugShowArea is set to 1
 
 @end
 
