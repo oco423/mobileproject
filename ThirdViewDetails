@@ -1,0 +1,96 @@
+Third Tab
+	
+	The third tab is used to display useful weather information about the user's current 
+
+location. The view itself is a simple UIView and uses a basic UIViewController. The background is 
+
+set to a shade of blue similar to a clear sky. A UIImageView is used to display the current weather 
+
+icon, and UILabels are used to display the weather information.
+
+	The ViewController.h file for this view imports <CLLocationManagerDelegate> which is 
+
+required when using CLLocationManager. It then links all the storyboard elements
+
+	The ViewContoller.m file contains all the code related to the functionality of the third 
+
+tab. First, it declares some instance variables that will be used in the view: 
+
+    	CLLocationManager *locationManager;
+    	CLLocation *currentLocation;
+    	NSString* apiKey;
+	int currentDay;
+
+	LocationManger is a CLLocationManager that is used to generate the user's location. 
+
+currentLocation is used to store the user's current location. the apiKey variable will store the API 
+
+key from openweathermap.org that is required to get information from the site. The key is free upon 
+
+registering an account on the site.
+
+	The first function, as usual, in this view is (void)viewDidLoad. Within this function, we 
+
+start by assigning the API key:
+
+	apiKey = @"9ee3e4133c207d8258520dbdff88ec66";
+
+Then, we allocate and initialize the locationManager:
+
+   	 locationManager = [[CLLocationManager alloc] init];
+   	 locationManager.delegate = self;
+    	[locationManager requestWhenInUseAuthorization];
+    	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+	[locationManager startUpdatingLocation]; 
+
+The next function is the handler function for the location manager:
+
+	(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(nonnull 
+
+NSArray<CLLocation *> *)locations
+
+Then, it gets the current location of the user, and checks if it is nil. If it is not nil, it gets 
+
+the latitude and longitude of the user. Next, a CLGeocoder is allocated and initialized to get the 
+
+user's current city. Finally, the function that will gather the weather information is called using 
+
+the current latitude and longitude:
+
+	 [self getWeatherAtLocation:lat Lon:lon];
+
+Now comes the function is the required error catching function used by CLLocationManager:
+
+	(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+
+It simply checks for errors displays an alert if an error is found.
+
+This brings us to the function that is used to construct the URL that will be used to gather the 
+
+weather information for the current latitude and longitude:
+
+	(void)getWeatherAtLocation:(NSString *)lat Lon:(NSString *)lon
+
+This function constructs a URL using set strings and appends the latitude, longitude, and API key. 
+
+It then calls the function that will get the data from the url, which is also the next function in 
+
+the code:
+
+ 	[self getDataFromURL:url];
+
+	(void)getDataFromURL:(NSURL *)url
+
+The first thing this function does is call the downloadData function within the AppDelegate.m file:
+
+	 [AppDelegate downloadData:url withCompletionHandler:^(NSData *data)
+
+This will get all the relevant data from the URL and store as JSON data. Next, it converts the data 
+
+to a dictionary so we can get values:
+
+	 NSMutableDictionary *returnedDict = [NSJSONSerialization JSONObjectWithData:data 
+
+options:kNilOptions error:&err];
+
+The rest of this function pulls values from the dictionary, formats them, and displays them.
