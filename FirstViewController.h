@@ -2,8 +2,7 @@
 //  ViewController.h
 //  FirstViewController
 //
-//  Created by Jeffrey Lawrence Conway on 2017-03-31.
-//  Copyright © 2017 Jeffrey Lawrence Conway. All rights reserved.
+//  Copyright © 2017 Jeff Conway, Sam Ash, Osede Onodenalore. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,14 +11,16 @@
 
 
 @interface FirstViewController : UIViewController <CLLocationManagerDelegate>{
-    NSNumber *maxRecordedSpeed;
-    int timeTick;
-    int minutes;
-    NSTimer *timer;
+    NSNumber *maxRecordedSpeed;                     //Variable to track max speed
+    int timeTick;                                   //Variable to track seconds for the timer
+    int minutes;                                    //Variable to track minutes for the timer
+    NSTimer *timer;                                 //Timer user to track session time
 }
 
 //values of all the numbers displayed on the movement view
 @property float maxRecordedSpeed;
+
+//UILabels to display information
 @property (strong, nonatomic) IBOutlet UILabel *stepsTaken;
 @property (strong, nonatomic) IBOutlet UILabel *distanceTraveled;
 @property (strong, nonatomic) IBOutlet UILabel *stepsPerSecond;
@@ -28,6 +29,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *averageSpeed;
 @property (strong, nonatomic) IBOutlet UILabel *sessionSeconds;
 @property (strong, nonatomic) IBOutlet UILabel *sessionMinutes;
+
+//UIButtons to reset and convert the values
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
 @property (weak, nonatomic) IBOutlet UIButton *convertButton;
 
